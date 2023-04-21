@@ -58,12 +58,28 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\everyhting pathfinding\non api pathfinding\Node.cs" />
     <Compile Include="Assets\Scripts\everyhting pathfinding\non api pathfinding\Astar.cs" />
-    <Compile Include="Assets\Scripts\Triangle.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\parent nodes\ParentNode.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\leaf nodes\Individual Behaviours\TakeOutTrash.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\leaf nodes\LeafNode.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\parent nodes\SelectorNode.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\BehaviourNode.cs" />
+    <Compile Include="Assets\Scripts\terrain mesh generation\Triangle.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\leaf nodes\Individual Behaviours\PickUpTrash.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\parent nodes\RepeaterNode.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\leaf nodes\Individual Behaviours\Wander.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\leaf nodes\Individual Behaviours\ScanForTrash.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\leaf nodes\Individual Behaviours\Mop.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\leaf nodes\Individual Behaviours\Idle.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\BehaviorTreeManager.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\parent nodes\SequenceNode.cs" />
     <Compile Include="Assets\Scripts\everyhting pathfinding\non api pathfinding\Grid.cs" />
     <Compile Include="Assets\Scripts\everyhting pathfinding\non api pathfinding\WayPoints.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\leaf nodes\Individual Behaviours\DetermineTrashType.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Scripts\Shaders\Phong.shader" />
     <None Include="Assets\Scripts\everyhting pathfinding\PathFindingAPI.dll" />
+    <None Include="Assets\Scripts\Shaders\OutlineShader.shader" />
     <None Include="Assets\Scripts\Shaders\UnlitCustomShader.shader" />
   </ItemGroup>
   <ItemGroup>

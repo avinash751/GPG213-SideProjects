@@ -378,12 +378,12 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Graphs\GraphData.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Nodes\Input\Lighting\ReflectionProbeNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Nodes\Math\Wave\TriangleWaveNode.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Nodes\Math\Round\StepNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Nodes\Input\Lighting\BakedGINode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Nodes\Math\Trigonometry\HyperbolicCosineNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Drawing\Views\PortInputView.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Drawing\Colors\CategoryColors.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Drawing\Controls\ChannelMixerControl.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Nodes\Math\Round\StepNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Nodes\Math\Round\TruncateNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Drawing\Controls\ChannelEnumControl.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Drawing\Views\Slots\CubemapSlotControlView.cs" />
@@ -416,8 +416,8 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Drawing\Inspector\PropertyDrawers\GradientPropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Nodes\LegacyUnknownTypeNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Drawing\Controls\TextureArrayControl.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Drawing\Controls\ObjectControl.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Drawing\Colors\NoColors.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Drawing\Controls\ObjectControl.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Drawing\Colors\ColorManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Attributes\BuiltinKeywordAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Nodes\Utility\Logic\NotNode.cs" />
@@ -603,8 +603,8 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Util\KeywordUtil.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Nodes\Math\Advanced\LogNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Extensions\FieldExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Util\CompatibilityExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Interfaces\Graph\IEdge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Util\CompatibilityExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Data\Nodes\Artistic\Adjustment\ContrastNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Serialization\MultiJsonEntry.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.10.1\Editor\Extensions\IConditionalExtensions.cs" />
