@@ -7,8 +7,8 @@ public class TakeOutTrash : LeafNode
     float takingTrashOutTimer =5;
     public override NodeState ExecuteNode()
     {
-        if (NodeExecuted) return NodeState.Default;
-        NodeExecuted = true;
+        if (nodeExecuted) return NodeState.Default;
+        nodeExecuted = true;
         TakingOutTrash();
         return CurrentnodeState;
     }

@@ -4,30 +4,33 @@ using UnityEngine;
 
 public class ParentNode : BehaviourNode
 {
-  
-    public virtual  void AddChild(BehaviourNode child)
+    protected List<BehaviourNode> childrenNodes = new List<BehaviourNode>();
+    public  virtual ParentNode AddChild(BehaviourNode child)
     {
         childrenNodes.Add(child);
+        return this;
     }
-    public virtual void RemoveChild(BehaviourNode child)
+    public  virtual ParentNode RemoveChild(BehaviourNode child)
     {
         childrenNodes.Remove(child);
+        return this;
     }
 
-    public virtual NodeState EvaluateNode(int nodeIndex)
-    {
-        return CurrentnodeState;
-    }
+   
 
     public override void ResetNodeState(BehaviourNode node)
     {
         base.ResetNodeState(node);
 
-        if (node is LeafNode || node.childrenNodes.Count<=0) return;
+        if (node is LeafNode ) return;
 
-        for( int i = 0; i < node.childrenNodes.Count; i++)
+        ParentNode parentNode = null;
+
+        if (node is ParentNode ) {  parentNode = node as  ParentNode; }
+
+        for( int i = 0; i < parentNode.childrenNodes.Count; i++)
         {
-            ResetNodeState(node.childrenNodes[i]);
+            ResetNodeState(parentNode.childrenNodes[i]);
         }
     }
 }

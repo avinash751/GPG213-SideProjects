@@ -10,9 +10,9 @@ public class ScanForTrash : LeafNode
     public float scanForTrashTime = 0.5f;
     public override NodeState ExecuteNode()
     {
-        if (NodeExecuted) return NodeState.Default;
+        if (nodeExecuted) return NodeState.Default;
 
-        NodeExecuted = true;
+        nodeExecuted = true;
         ScanningForTrash();
         return CurrentnodeState;
     }

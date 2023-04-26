@@ -32,7 +32,7 @@ public class SequenceNode : ParentNode
 
         if (CurrentnodeState == NodeState.Success || CurrentnodeState == NodeState.Failure)
         {
-            NodeExecuted = true;
+            nodeExecuted = true;
             Debug.Log("sequence node executed succesfully");
         }
         return CurrentnodeState;

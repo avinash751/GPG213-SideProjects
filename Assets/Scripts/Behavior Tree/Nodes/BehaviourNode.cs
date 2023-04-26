@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class BehaviourNode
 {
-    public bool NodeExecuted;
+    protected bool nodeExecuted;
+    public bool NodeExecuted { get { return nodeExecuted;}}
+
     public enum NodeState
     {
         Success,
@@ -12,17 +14,18 @@ public class BehaviourNode
         Default
     }
 
-    public List<BehaviourNode> childrenNodes = new List<BehaviourNode>();
+   
 
     public NodeState CurrentnodeState = NodeState.Default;
 
     public virtual NodeState ExecuteNode()
     {
         return NodeState.Default;
+        
     }
     public virtual void ResetNodeState(BehaviourNode node )
     {
         node.CurrentnodeState = NodeState.Default;
-        node.NodeExecuted = false;
+        node.nodeExecuted = false;
     }
 }

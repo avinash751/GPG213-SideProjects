@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\everyhting pathfinding\non api pathfinding\Node.cs" />
+    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\leaf nodes\Individual Behaviours\DetermineTrashType.cs" />
     <Compile Include="Assets\Scripts\everyhting pathfinding\non api pathfinding\Astar.cs" />
     <Compile Include="Assets\Scripts\Behavior Tree\Nodes\parent nodes\ParentNode.cs" />
     <Compile Include="Assets\Scripts\Behavior Tree\Nodes\leaf nodes\Individual Behaviours\TakeOutTrash.cs" />
@@ -74,13 +75,13 @@
     <Compile Include="Assets\Scripts\Behavior Tree\Nodes\parent nodes\SequenceNode.cs" />
     <Compile Include="Assets\Scripts\everyhting pathfinding\non api pathfinding\Grid.cs" />
     <Compile Include="Assets\Scripts\everyhting pathfinding\non api pathfinding\WayPoints.cs" />
-    <Compile Include="Assets\Scripts\Behavior Tree\Nodes\leaf nodes\Individual Behaviours\DetermineTrashType.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Scripts\Shaders\Phong.shader" />
+    <None Include="Assets\Scripts\Shaders\TestDebugDocumentationShader.shader" />
+    <None Include="Assets\Scripts\Shaders\shaders in class\Phong.shader" />
     <None Include="Assets\Scripts\everyhting pathfinding\PathFindingAPI.dll" />
-    <None Include="Assets\Scripts\Shaders\OutlineShader.shader" />
-    <None Include="Assets\Scripts\Shaders\UnlitCustomShader.shader" />
+    <None Include="Assets\Scripts\Shaders\shader 1.shader" />
+    <None Include="Assets\Scripts\Shaders\shaders in class\UnlitCustomShader.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

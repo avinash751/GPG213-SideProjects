@@ -30,7 +30,7 @@ public class RepeaterNode : ParentNode
             else if (childrenNodes[i].CurrentnodeState == NodeState.Success && repeatOnFailure)
             {
                 CurrentnodeState = childrenNodes[i].CurrentnodeState;
-                NodeExecuted = true;
+                nodeExecuted = true;
                 Debug.Log("repeat node executed succesfully ");
                 return CurrentnodeState;
             }
@@ -46,7 +46,7 @@ public class RepeaterNode : ParentNode
             else if (childrenNodes[i].CurrentnodeState == NodeState.Failure && !repeatOnFailure)
             {
                 CurrentnodeState = childrenNodes[i].CurrentnodeState;
-                NodeExecuted = true;
+                nodeExecuted = true;
                 Debug.Log("repeat node executed succesfully ");
                 return CurrentnodeState;
             }

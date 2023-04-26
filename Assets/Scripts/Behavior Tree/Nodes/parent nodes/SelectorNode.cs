@@ -17,14 +17,14 @@ public class SelectorNode : ParentNode
             {
                 CurrentnodeState = NodeState.Success;
                 Debug.Log("selector node executed succesfully");
-                NodeExecuted = true;
+                nodeExecuted = true;
                 return CurrentnodeState;
             }
             else if (childrenNodes[i].CurrentnodeState == NodeState.Failure)
             {
                 CurrentnodeState = NodeState.Failure;
                 Debug.Log("selector current child node failed execution ");
-                NodeExecuted = true;
+                nodeExecuted = true;
                 continue;
             }
             else if (childrenNodes[i].CurrentnodeState == NodeState.Default)

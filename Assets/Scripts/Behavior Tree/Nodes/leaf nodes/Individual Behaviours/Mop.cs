@@ -13,9 +13,9 @@ public class Mop : LeafNode
     public float MoppingTIme = 0.5f;
     public override NodeState ExecuteNode()
     {
-        if (NodeExecuted) return NodeState.Default;
+        if (nodeExecuted) return NodeState.Default;
 
-        NodeExecuted = true;
+        nodeExecuted = true;
         MoppingUpTrash();
         return CurrentnodeState;
     }

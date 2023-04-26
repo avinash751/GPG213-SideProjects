@@ -13,9 +13,9 @@ public class DetermineTrashType : LeafNode
     }
     public override NodeState ExecuteNode()
     {
-        if (NodeExecuted) return NodeState.Default;
+        if (nodeExecuted) return NodeState.Default;
 
-        NodeExecuted = true;
+        nodeExecuted = true;
         ScanningForTrash();
         return CurrentnodeState;
     }

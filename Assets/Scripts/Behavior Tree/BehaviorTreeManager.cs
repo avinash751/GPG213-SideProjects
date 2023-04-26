@@ -29,15 +29,10 @@ public class BehaviorTreeManager : MonoBehaviour
     private void AddChildrenToRespectiveNodesToMakeBehviourTree()
     {
         rootNode.AddChild(startSequenceNode);
-        startSequenceNode.AddChild(idleNode);
-        startSequenceNode.AddChild(wanderNode);
-        startSequenceNode.AddChild(scanForTrashNode);
-        startSequenceNode.AddChild(determineTrashTypeNode);
-        startSequenceNode.AddChild(CleanNode);
-        CleanNode.AddChild(pickUpTrashNode);
-        CleanNode.AddChild(mopNode);
-        startSequenceNode.AddChild(takeOutTrashNode);
-       
+        startSequenceNode.AddChild(idleNode).AddChild(wanderNode).AddChild(scanForTrashNode).
+        AddChild(determineTrashTypeNode).AddChild(CleanNode).AddChild(takeOutTrashNode);
+
+        CleanNode.AddChild(pickUpTrashNode).AddChild(mopNode);
     }
 
     private void InitializeAllNodes()
@@ -60,6 +55,5 @@ public class BehaviorTreeManager : MonoBehaviour
         {
             rootNode.ExecuteNode();
         }
-        
     }
 }
