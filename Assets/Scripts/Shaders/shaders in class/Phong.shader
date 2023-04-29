@@ -59,7 +59,7 @@ Shader "Unlit/Phong"
             {
 
                 // -------------- Diffuse light  --------------
-                float3 normalisedNormalum = normalize(i.worldNormal);
+                float3 normalisedNormal = normalize(i.worldNormal);
                 float4 ambientColor = BaseColor * UNITY_LIGHTMODEL_AMBIENT;
                 float directionIntensity = max(dot(_WorldSpaceLightPos0, normalisedNormal),0);
                 float4 diffuseLight = fixed4(_LightColor0.rgb * BaseColor.rgb * directionIntensity, 1);
