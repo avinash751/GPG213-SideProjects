@@ -55,5 +55,6 @@ public class BehaviorTreeManager : MonoBehaviour
         {
             rootNode.ExecuteNode();
         }
+      
     }
 }

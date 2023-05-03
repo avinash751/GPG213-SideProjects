@@ -46,7 +46,6 @@ public class Astar : MonoBehaviour
 
             SetNewCurrentNodeThatGetsVisitedBasedOnFcost();
             
-
             GetNeighboursForCurrentNode(grid.getNodeBasedOnLocalPosition(currentNodePosition), ref finalPath);
             ResetNeigbhourNodeStatsBasedOnAlgorithimVersion();
 
@@ -55,17 +54,14 @@ public class Astar : MonoBehaviour
 
             AddNodesToOpenList();
             CheckWhetherCurrentNodeIsGoal(currentNodePosition, ref finalPath);
-
         }
         return pathFound;
     }
 
     void ResetAllAStarAlorithimAndItsStats(Vector3 startNodeGridPosition, Vector3 goalNodeGridPosition, ref List<Node> finalPath)
     {
-
         SetNewGoalAndStartNodeAndItsPostions(startNodeGridPosition, goalNodeGridPosition);
         ResetAStarPathRelatedStats(ref finalPath);
-
     }
 
     void InitialiseStartNodeAndAddToOpenList()

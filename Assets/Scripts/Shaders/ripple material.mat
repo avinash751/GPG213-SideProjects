@@ -91,14 +91,14 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _MoveSpeed: -0.5
+    - _MoveSpeed: 0.19
     - _OcclusionStrength: 1
-    - _OffsetValue: 1
+    - _OffsetValue: 3
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RepeatRate: 30
-    - _ScalerValue: 2
+    - _ScalerValue: 5.98
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
